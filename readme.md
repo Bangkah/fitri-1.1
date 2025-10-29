@@ -1,26 +1,25 @@
-# Local AI Web App
 
-Proyek ini adalah aplikasi web AI lokal yang terhubung dengan **Ollama**, memungkinkan Anda menjalankan model seperti **LLaMA 3**, **Mistral**, dan lainnya secara lokal tanpa koneksi internet.
+# Fitri AI 
 
-## 🧠 Fitur Utama
-- Jalankan model AI lokal dengan Ollama  
-- UI web sederhana dan cepat  
-- Tidak memerlukan akun API (offline)  
+**Fitri AI** adalah asisten AI lokal berbasis **Ollama**, dijalankan sepenuhnya melalui **Command Line Interface (CLI)**.  
+Tidak membutuhkan koneksi internet maupun API key. Semua pemrosesan dilakukan **lokal di perangkat kamu**.
 
-## ⚙️ Instalasi
+---
 
-### 1. Clone repositori
+## Instalasi
+
+### 1. Clone repositori ini
 ```bash
-git clone https://github.com/username/local-ai-web.git
-cd local-ai-web
+git clone https://github.com/Bangkah/fitri-1.1.git
+cd fitri-1.1
 ````
 
-### 2. Install Ollama
+### 2. Instal Ollama
 
 #### 🔹 Windows
 
-Unduh dan install dari situs resmi:
-👉 [https://ollama.com/download](https://ollama.com/download)
+Unduh installer resmi dari:
+   [https://ollama.com/download](https://ollama.com/download)
 
 #### 🔹 Linux
 
@@ -34,35 +33,88 @@ curl -fsSL https://ollama.com/install.sh | sh
 brew install ollama/tap/ollama
 ```
 
-### 3. Jalankan Ollama
+Setelah instalasi selesai, jalankan layanan Ollama:
 
 ```bash
-ollama run llama3
+ollama serve
 ```
-
-Atau ganti `llama3` dengan model lain yang Anda inginkan (misalnya `mistral`, `gemma`, dll).
-
-### 4. Install dependensi web app
-
-```bash
-npm install
-```
-
-### 5. Jalankan server lokal
-
-```bash
-npm start
-```
-
-Akses di browser:
-👉 [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 💡 Catatan
+## Penggunaan Fitri AI
 
-* Pastikan Ollama sudah berjalan di background sebelum membuka web.
-* Model AI disimpan secara lokal di sistem Anda, jadi tidak memerlukan internet.
+### 1. Pastikan Ollama sudah berjalan
+
+Cek dengan:
+
+```bash
+ollama list
+```
+
+Jika model belum tersedia, unduh model yang ingin digunakan, misalnya:
+
+```bash
+ollama pull llama3
+```
+
+### 2. Jalankan Fitri dari terminal
+
+Gunakan perintah berikut di direktori proyek:
+
+```bash
+bash fitri.sh
+```
+
+### 3. Mulai berinteraksi
+
+Kamu bisa langsung mengetik pertanyaan atau perintah seperti:
+
+```
+fitri> Apa itu AI?
+```
+
+Fitri akan menjawab langsung di terminal menggunakan model AI yang aktif.
+
+### 4. Riwayat sesi
+
+Fitri secara otomatis menyimpan riwayat percakapan di:
+
+```
+memory/session.txt
+```
+
+Kamu dapat menghapus file ini jika ingin memulai sesi baru.
 
 ---
 
+## Fitur Utama
+
+* Chat langsung dengan model AI lokal
+* Tidak memerlukan koneksi internet
+* Menyimpan riwayat sesi secara otomatis
+* Privasi 100% — data tidak keluar dari perangkat
+
+---
+
+## Pengembangan Lanjutan
+
+Fitri AI **saat ini hanya menggunakan CLI**,
+namun masih **bisa dikembangkan** menjadi antarmuka lain seperti:
+
+* Web UI sederhana (misal dengan Node.js, Flask, atau React)
+* Desktop app (Electron)
+* Integrasi terminal yang lebih interaktif (dengan input warna dan format markdown)
+
+Jika kamu tertarik mengembangkan lebih lanjut, silakan:
+
+**Buka issue baru** untuk ide, saran, atau bug
+**Buat Pull Request (PR)** jika kamu ingin berkontribusi
+
+---
+
+## Pembuat
+
+**Muhammad Dhiyaul Atha**
+Proyek open source — bebas digunakan dan dikembangkan untuk keperluan edukasi.
+
+---
