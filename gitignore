@@ -1,0 +1,14 @@
+# Temporary or generated files
+*.tmp
+*.log
+
+# Ollama temporary files
+.ollama/
+.fitri_prompt.tmp
+
+# Memory and session data
+memory/session.txt
+
+# System files
+.DS_Store
+Thumbs.db
