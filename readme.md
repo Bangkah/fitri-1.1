@@ -110,11 +110,6 @@ Jika kamu tertarik mengembangkan lebih lanjut, silakan:
 **Buka issue baru** untuk ide, saran, atau bug
 **Buat Pull Request (PR)** jika kamu ingin berkontribusi
 
----
 
-## Pembuat
-
-**Muhammad Dhiyaul Atha**
-Proyek open source — bebas digunakan dan dikembangkan untuk keperluan edukasi.
 
 ---
